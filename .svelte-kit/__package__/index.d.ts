@@ -1,2 +1,2 @@
-export { TagsInput };
-import TagsInput from "./TagsInput.svelte";
+export { PrismCodeEditor };
+import PrismCodeEditor from "./CodeEditor/CodeEditor.svelte";
