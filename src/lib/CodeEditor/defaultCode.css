@@ -1,0 +1,10 @@
+.section--features {
+  & .card {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background: var(--cardHoverBgColor);
+    }
+  }
+}
