@@ -29,11 +29,9 @@
   export let readOnly = false;
   export let wordWrap = false;
   export let rtl = false;
+  export let editor;
 
   const defaultCode = language === 'css' ? defaultCSS : defaultHtml;
-
-  let editorRef;
-  let editor;
 
   let dispatch = createEventDispatcher();
 
@@ -91,5 +89,7 @@
     console.log(editor);
   });
 </script>
+
+
 
 <div id={id} class="code-editor {className}" ></div>

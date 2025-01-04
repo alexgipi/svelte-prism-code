@@ -1,2 +1,2 @@
 export { PrismCodeEditor };
-import PrismCodeEditor from "./CodeEditor/CodeEditor.svelte";
+import PrismCodeEditor from "./CodeEditor.svelte";

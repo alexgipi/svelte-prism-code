@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import PrismCodeEditor from './lib/CodeEditor/CodeEditor.svelte';
+  import PrismCodeEditor from './lib/CodeEditor.svelte';
   import packageJson from '../package.json';
 
   let name = packageJson.name;
@@ -8,12 +8,18 @@
 
   let value = null;
 
+  let editor;
+
   function onUpdate(e){
     const { eventType, code } = e.detail;
 
     if(eventType === 'update'){
         value = code;
     }
+  }
+
+  function updateCode() {
+    editor.setOptions({value: 'Hola'})
   }
 </script>
 
@@ -28,7 +34,9 @@
   <p class="package-desc">{description}</p>
 
   <div class="card">
+    <button on:click={updateCode}>Update code</button>
     <PrismCodeEditor 
+    bind:editor={editor}
     on:update={e => onUpdate(e)}
     language="css" 
     id="example-code-editor" 
