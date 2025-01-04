@@ -15,10 +15,8 @@
   // import "prism-code-editor/languages/html"
   // import "prism-code-editor/languages/css"
 
-
-
-  import defaultHtmlCode from "./defaultCode.html?raw";
-  import defaultCssCode from "./defaultCode.css?raw";
+  import { defaultHtml } from "./defaultHtml.js";
+  import { defaultCSS } from "./defaultCSS.js";
 
   // Props
   export let id = 'code-editor';
@@ -32,7 +30,7 @@
   export let wordWrap = false;
   export let rtl = false;
 
-  const defaultCode = language === 'css' ? defaultCssCode : defaultHtmlCode;
+  const defaultCode = language === 'css' ? defaultCSS : defaultHtml;
 
   let editorRef;
   let editor;

@@ -1,4 +1,4 @@
-<div class="message">
+export const defaultHtml = `<div class="message">
  <p>Esto es un mensaje estático en el html.</p>
 <div>
 
@@ -13,4 +13,4 @@
   color: #fff;
   background: #333;
 }
-</style>
+</style>`
