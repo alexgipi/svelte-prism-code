@@ -1,6 +1,6 @@
 .code-editor {
     --editor__border-radius: 12px;
-    min-height: 250px;
+    min-height: 200px;
     background-color: #1e1e1e;
     border-radius: var(--editor__border-radius);
     overflow: hidden;

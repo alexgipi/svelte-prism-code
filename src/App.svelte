@@ -34,7 +34,6 @@
   <p class="package-desc">{description}</p>
 
   <div class="card">
-    <button on:click={updateCode}>Update code</button>
     <PrismCodeEditor 
     bind:editor={editor}
     on:update={e => onUpdate(e)}
